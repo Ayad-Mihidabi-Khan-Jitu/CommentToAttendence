@@ -113,8 +113,9 @@ namespace CommentToAttendence
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
             NetworkCredential NetworkCred = new NetworkCredential();
-            NetworkCred.UserName = sender;
-            NetworkCred.Password = "shadhing2";
+            //sender = "abcd@gmail.com" ///enter your email
+            NetworkCred.UserName = "your_email";
+            NetworkCred.Password = "password";
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
