@@ -14,7 +14,7 @@ namespace CommentToAttendence
     {
      public class MailCreator 
         {
-        public string defalultSender = "amkhanshadhin@gmail.com";
+        public string defalultSender = "enter_your_email";
         public string emailSubject = "Attendance Sheet: ";
         public string email_body_header = "This is an automated Mail<br>_____________________________________________<br>";    
         public string email_body_footer = "<br><br>---------------------------------------------------<br><b>Developed by JITU<br>CSE Batch-15, PSTU<br>";
@@ -58,8 +58,10 @@ namespace CommentToAttendence
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
             NetworkCredential NetworkCred = new NetworkCredential();
-            NetworkCred.UserName = sender;
-            NetworkCred.Password = "shadhing2";
+            
+            NetworkCred.UserName = "your_email";
+            NetworkCred.Password = "password";
+            
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
@@ -94,8 +96,10 @@ namespace CommentToAttendence
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
             NetworkCredential NetworkCred = new NetworkCredential();
-            NetworkCred.UserName = sender;
-            NetworkCred.Password = "shadhing2";
+            
+            NetworkCred.UserName = "your_email";
+            NetworkCred.Password = "password";
+            
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
@@ -113,9 +117,10 @@ namespace CommentToAttendence
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
             NetworkCredential NetworkCred = new NetworkCredential();
-            //sender = "abcd@gmail.com" ///enter your email
+    
             NetworkCred.UserName = "your_email";
             NetworkCred.Password = "password";
+            
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
